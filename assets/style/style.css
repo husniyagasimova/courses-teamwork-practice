@@ -18,6 +18,50 @@ html {
 
 #media {
     background-image: url('/assets/images/e6157d-15-041-3b75-0dc8deb2ea41_yt-bg.webp');
+    color: white;
+}
+
+.mediaMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+..mediaLeft img {
+    width: 20%;
+}
+
+.mediaRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.mediaRight h2 {
+    font-size: 3.6rem;
+}
+
+.mediaRight p {
+    font-size: 1.8rem;
+}
+
+span {
+    font-weight: 700;
+}
+
+.mediaRight button {
+    background-color: black;
+    max-width: max-content;
+    padding: 1rem 3rem;
+    color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 2rem;
 }
 
 @media screen and (max-width: 768px) {
