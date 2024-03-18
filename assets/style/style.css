@@ -16,19 +16,21 @@ html {
     margin: auto;
 }
 #courses{
-  padding: 40px 0;
   height: max-content;
   background-color: black;
 }
-.courses{
+
+.course{
+  padding: 8rem 4rem;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 4rem;
   align-items: center;
+
 }
 
 
-.courses h2{
+.course h2{
   font-size: 4rem;
   color: white;
 }
@@ -36,24 +38,25 @@ html {
 h2 span{
   color: rgb(49, 149, 255);
 }
-.courses .cart{
+.course .cart{
   border: #333 solid 1px;
   background-color: rgb(34, 34, 34);
   border-radius: 0.5rem;
   position: relative;
 }
-.courses .cart .content{
-  height: 200px;
+.course .cart .content{
+  height: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: white;
-  font-size: 1.8rem;
-  padding: 2rem;
+  font-size: 1.7rem;
+  padding-left: 2.5rem;
+  padding-top: 2.5rem;
   margin-top: 4rem;
 }
 img.abselute{
-  width: 80px;
+  width: 70px;
   position: absolute;
   right: 1rem;
   top: 1rem;
@@ -79,13 +82,13 @@ p.blueP{
 
 .aboveCarts{
   display: grid;
-  gap: 3rem;
+  gap: 4rem;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 25rem;
 }
 .belowCarts{
   display: grid;
-  gap: 3rem;
+  gap: 4rem;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 25rem 25rem;
 }
@@ -100,16 +103,18 @@ p.blueP{
 }
 
 @media screen and (max-width: 768px) {
-  .courses{
+  .course{
     margin: 3rem;
   }
   .aboveCarts{
+    gap: 3rem;
     grid-template-columns: 1fr 1fr;
   }
   .aboveCarts .cart:nth-child(3){
     grid-column: 1 / span 2;
   }
   .belowCarts{
+    gap: 3rem;
     grid-template-columns: 1fr 1fr;
   }
   
@@ -117,16 +122,18 @@ p.blueP{
 
 
 @media screen and (max-width: 576px) {
-  .courses{
+  .course{
     margin: 2rem;
   }
   .aboveCarts{
+    gap: 2rem;
     grid-template-columns: 1fr;
   }
   .aboveCarts .cart:nth-child(3){
     grid-column: 1 / span 1;
   }
   .belowCarts{
+    gap: 2rem;
     grid-template-columns: 1fr;
   }
   }
