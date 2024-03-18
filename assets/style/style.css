@@ -12,7 +12,8 @@ html {
 }
 
 .container {
-    max-width: 1260px;
+    /* max-width: 1260px; */
+    max-width: 80%;
     margin: auto;
 }
 
@@ -27,8 +28,8 @@ html {
     align-items: center;
 }
 
-..mediaLeft img {
-    width: 20%;
+.mediaLeft img {
+     max-width: 100%;
 }
 
 .mediaRight {
@@ -40,11 +41,11 @@ html {
     text-align: center;
 }
 
-.mediaRight h2 {
+.h2 {
     font-size: 3.6rem;
 }
 
-.mediaRight p {
+.paragraph {
     font-size: 1.8rem;
 }
 
@@ -63,6 +64,34 @@ span {
     font-weight: 600;
     margin-top: 2rem;
 }
+
+#popular {
+    background-color: black;
+    color: white;
+}
+
+.popularCards 
+
+
+.popularCard {
+    width: 300px;
+}
+
+.popularCard img {
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .mediaMain {
+        flex-direction: column;
+    }
+
+    .h2 {
+        font-size: 3rem;
+    }
+    
+  }
+
 
 @media screen and (max-width: 768px) {
   }
