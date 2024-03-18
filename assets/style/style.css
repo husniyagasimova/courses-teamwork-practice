@@ -16,6 +16,10 @@ html {
     margin: auto;
 }
 
+#media {
+    background-image: url('/assets/images/e6157d-15-041-3b75-0dc8deb2ea41_yt-bg.webp');
+}
+
 @media screen and (max-width: 768px) {
   }
 
