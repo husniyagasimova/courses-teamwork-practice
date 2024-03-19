@@ -151,23 +151,87 @@ span {
     border-radius: 4px;
     font-size: 2rem;
     font-weight: 600;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
 }
 
 #popular {
     background-color: black;
     color: white;
+    padding: 2rem 0;
+    text-align: center;
 }
 
-.popularCards 
+.popularCards {
+    margin: 5rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+    grid-template-areas: "card1 card2 card3 card4"
+    "card5 card6 card7 card8";
+}
 
+.card1 {
+    grid-area: card1;
+}
 
-.popularCard {
-    width: 300px;
+.card2 {
+    grid-area: card2;
+}
+
+.card3 {
+    grid-area: card3;
+}
+
+.card4 {
+    grid-area: card4;
+}
+
+.card5 {
+    grid-area: card5;
+}
+
+.card6 {
+    grid-area: card6;
+}
+
+.card7 {
+    grid-area: card7;
+}
+
+.card8 {
+    grid-area: card8;
 }
 
 .popularCard img {
     width: 100%;
+}
+
+#footer {
+    background-color: #161e2a;
+    color: white;
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+.footerLogo {
+    width: 5rem;
+}
+
+.footerLogo img {
+    width: 100%;
+}
+
+.footerLogo {
+    width: 5rem;
+}
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerIcons i {
+    margin: 0.7rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -177,6 +241,20 @@ span {
 
     .h2 {
         font-size: 3rem;
+    }
+
+    .popularCards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "card1 card2"
+         "card3 card4"
+         "card5 card6" 
+         "card7 card8";
+    }
+
+    .footerContainer {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
     }
     
   }
@@ -222,4 +300,26 @@ span {
     gap: 2rem;
     grid-template-columns: 1fr;
   }
+  }
+
+    .container {
+        width: 60%;
+    }
+
+    .h2 {
+        font-size: 2.3rem;
+    }
+
+    
+    .popularCards {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "card1" 
+        "card2"
+         "card3" 
+         "card4"
+         "card5" 
+         "card6" 
+         "card7" 
+         "card8";
+    }
   }
