@@ -240,7 +240,7 @@ span {
     }
 
     .h2 {
-        font-size: 3rem;
+        font-size: 3.3rem;
     }
 
     .popularCards {
@@ -255,6 +255,10 @@ span {
         flex-direction: column;
         gap: 2rem;
         text-align: center;
+    }
+
+    .mediaRight button {
+      margin-bottom: 1.5rem;
     }
     
   }
