@@ -1,26 +1,210 @@
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
 }
 
-.container {
-    max-width: 1260px;
-    margin: auto;
-    display: flex;
+#container {
+  /* height: 120vh */
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  background-color: #3498DB;
+  justify-content: space-evenly;
+}
+
+.caption{
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-direction: column;
+color: white;
+font-size: 1.8rem;
+}
+.caption p{
+  font-size: 1.5rem;
+}
+
+.memberships{
+display: flex;
+gap: 2rem;
+align-items: center;
+
+}
+
+.single{
+background-color: #2C3E50;
+color: white;
+height: 64rem;
+display: flex;
+flex-direction: column;
+border-radius: 0.6px;
+justify-content: space-around;
+
+/* justify-content: space-evenly; */
+
+align-items: center;
+width: 40rem;
+padding: 0 2rem;
+
+
+}
+.course1 {
+gap: 0.5rem;
+font-size: 1.8rem;
+align-items: center;
+display: flex;
+flex-direction: column;
+}
+.course h2{
+  color: #0072EF;
+  font-size: 2.4rem;
+}
+.course h4{
+  color: #3498db;
+  font-size: 1.6rem;
+}
+.course h1{
+  font-size: 4.2rem;
+}
+.course2 {
+gap: 0.5rem;
+font-size: 1.8rem;
+align-items: center;
+display: flex;
+flex-direction: column;
+}
+.course3 {
+  gap: 0.5rem;
+  font-size: 1.8rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  }
+
+  .course1 h2{
+    color: #0072EF;
+    font-size: 2.4rem;
+}
+.course1 h4{
+    color: #3498db;
+    font-size: 1.6rem;
+}
+.course1 h1{
+    font-size: 4.2rem;
+}
+.course2 h2{
+  color: #0072EF;
+  font-size: 2.4rem;
+}
+.course2 h4{
+  color: black;
+  font-size: 1.6rem;
+}
+.course2 h1{
+  font-size: 4.2rem;
+}
+.course3 h2{
+color: #0072EF;
+font-size: 2.4rem;
+}
+.course3 h4{
+color:white;
+font-size: 1.6rem;
+}
+.course3 h1{
+font-size: 4.2rem;
+}
+.specifities{
+ max-height: 40rem;
+  display: flex;
+  /* background-color: red; */
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-around;
+  font-size: 1.5rem;
+
+}
+.specifities li{
+  display: flex ;
+  gap: 0.5rem;
+  align-items: center;
+}
+.specifities li i{
+ color: #0072EF;
+ font-size: 2.2rem;
+}
+.monthly{
+color: black;
+height: 72rem;
+display: flex;
+flex-direction: column;
+border-radius: 0.6rem;
+justify-content: space-evenly;
+background-color: white;
+align-items: center;
+width: 40rem;
+padding: 0 2rem;
+}
+.yearly{
+background-color: #1E1E1E;
+color: white;
+height: 80rem;
+display: flex;
+flex-direction: column;
+border-radius: 0.6rem;
+justify-content: space-evenly;
+align-items: center;
+width: 40rem;
+padding: 0 2rem;
+}
+.button1{
+  background-color: #0072EF;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 70rem;
+  width: 15rem;
+  height: 5rem;
+  border-radius: 6px;
+  color: white;
+}
+.button2{
+background-color: #0072EF;
+border: none;
+font-size: 1.8rem;
+font-weight: 70rem;
+width: 16rem;
+height: 6rem;
+border-radius: 0.6rem;
+color: white;
+}
+.button3{
+background-color: #0072EF;
+border: none;
+font-size: 1.8rem;
+font-weight: 70rem;
+width: 17rem;
+height: 7rem;
+border-radius: 0.6rem;
+color: white;
+}
+
+@media screen and (max-width: 992px) {
+
+
+
 }
 
 
 @media screen and (max-width: 768px) {
-  }
-
-
-@media screen and (max-width: 576px) {
-  }
+}
