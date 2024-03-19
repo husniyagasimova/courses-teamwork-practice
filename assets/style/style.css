@@ -1,15 +1,150 @@
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
 }
+
+#container {
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #3498DB;
+  justify-content: space-evenly;
+  padding: 5rem;
+}
+
+.caption{
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-direction: column;
+color: white;
+font-size: 1.8rem;
+}
+
+.caption h1{
+  text-align: center;
+}
+
+.caption p{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.memberships{
+display: flex;
+gap: 2rem;
+align-items: center;
+justify-content: space-between;
+margin-top: 3rem;
+}
+
+.card{
+  padding: 2rem;
+  width: 33%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.6rem;
+  align-items: center;
+}
+
+.text{
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.text h1{
+  font-size: 3.2rem;
+}
+
+.course1 h3, h4{
+  color: #0072EF;
+}
+
+.course2 h3{
+  color: #0072EF;
+}
+
+.course2 h1, h4{
+  color: #34495e;
+}
+
+.course3 h3{
+  color: #0072EF;
+}
+
+.course3 h4{
+  color: white;
+}
+
+.specifities{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  margin: 2.2rem 0;
+
+}
+.specifities li{
+  display: flex ;
+  gap: 0.5rem;
+  align-items: center;
+}
+.specifities li i{
+ color: #0072EF;
+ font-size: 2.2rem;
+}
+
+.single{
+  background-color: #2C3E50;
+  color: white;
+}
+
+.monthly{
+color: black;
+background-color: white;
+}
+
+.yearly{
+background-color: #1E1E1E;
+color: white;
+}
+
+.button{
+  background-color: #0072EF;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 70rem;
+  width: 15rem;
+  height: 5rem;
+  border-radius: 6px;
+  color: white;
+}
+
+@media screen and (max-width: 992px) {
+
+  .memberships{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card{
+    width: 45%;
+  }
 
 .container {
     /* max-width: 1260px; */
@@ -265,6 +400,8 @@ span {
 
 
 @media screen and (max-width: 768px) {
+  .card{
+    width: 50%;
   .course{
     margin: 3rem;
   }
@@ -287,6 +424,7 @@ span {
   }
   
   }
+}
 
 
 @media screen and (max-width: 576px) {
