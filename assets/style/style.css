@@ -12,7 +12,8 @@ html {
 }
 
 .container {
-    max-width: 1260px;
+    /* max-width: 1260px; */
+    max-width: 80%;
     margin: auto;
 }
 #courses{
@@ -104,6 +105,82 @@ p.blueP{
   font-weight: 700;
   border-radius: 0.5rem;
 }
+
+#media {
+    background-image: url('/assets/images/e6157d-15-041-3b75-0dc8deb2ea41_yt-bg.webp');
+    color: white;
+}
+
+.mediaMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mediaLeft img {
+     max-width: 100%;
+}
+
+.mediaRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.h2 {
+    font-size: 3.6rem;
+}
+
+.paragraph {
+    font-size: 1.8rem;
+}
+
+span {
+    font-weight: 700;
+}
+
+.mediaRight button {
+    background-color: black;
+    max-width: max-content;
+    padding: 1rem 3rem;
+    color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+#popular {
+    background-color: black;
+    color: white;
+}
+
+.popularCards 
+
+
+.popularCard {
+    width: 300px;
+}
+
+.popularCard img {
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .mediaMain {
+        flex-direction: column;
+    }
+
+    .h2 {
+        font-size: 3rem;
+    }
+    
+  }
+
 
 @media screen and (max-width: 768px) {
   .course{
